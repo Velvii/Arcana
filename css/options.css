@@ -1,0 +1,176 @@
+
+@font-face{
+    font-family: New Amsterdam;
+    src: url("../fonts/NewAmsterdam-Regular.ttf");
+}
+*{
+    font-family: New Amsterdam;
+    margin: 0;
+    --soft-black: #132536;
+    background-color: rgba(0, 255, 255, 0);
+    transition: .2s;
+}
+
+#return{
+    position: fixed;
+    height: auto;
+    width: 20vw;
+    bottom: -.1vw;
+    left: 0;
+    margin: 0;
+    animation: return .6s ease;
+}
+@keyframes return{
+    0%{
+        left: -10vw;
+    }
+    100%{
+
+    }
+}
+#return:hover{
+    transform: translate(-.2vw, .2vw);
+}
+
+#return:active{
+    transform: translate(-.5vw, .5vw);
+}
+
+#mascot{
+    position: fixed;
+    height: auto;
+    width:20vw;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    z-index: 1;
+}
+
+#circle1{
+    position: fixed;
+    width: 35vw;
+    height: 35vw;
+    background-color: rgba(0, 255, 255, 0);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    border-radius: 500px;
+    border: 1vw #132536 solid;
+}
+
+
+#circle2{
+    position: fixed;
+    width: 38vw;
+    height: 38vw;
+    background-color: rgba(0, 255, 255, 0);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    border-radius: 500px;
+    border: .8vw #132536 dashed;
+    animation: circle2Idle 50s infinite linear;
+}
+
+@keyframes circle2Idle{
+    0%{
+        
+    }
+    100%{
+        transform: translateX(-50%)translateY(-50%)rotate(360deg);
+    }
+}
+
+
+#optionsDiv{
+    position: fixed;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+    flex-direction: column;
+}
+
+#optionsDiv button{
+    font-family: New Amsterdam;
+    color: white;
+    -webkit-text-stroke: #132536 .5px;
+    font-size: 10vw;
+    border: 0;
+    rotate: 0deg;
+    margin: 0;
+}
+
+#optionsDiv button:hover{
+    color: antiquewhite;
+}
+
+#info{
+    transform: translate(-18vw, 6vw)rotate(30deg);
+    filter: drop-shadow(.3vw .2vw #132536)
+    drop-shadow(.2vw .1vw #132536)
+    drop-shadow(.1vw 0vw #132536);
+    rotate: 5deg;
+}
+
+#info:hover{
+    transform: translate(-18vw, 5.5vw) rotate(30deg) scale(1.12);
+    filter: drop-shadow(.5vw .4vw #132536)
+    drop-shadow(.4vw .3vw #132536)
+    drop-shadow(.3vw .2vw #132536)
+    drop-shadow(.2vw .1vw #132536);
+    rotate: 3deg;
+}
+
+
+#visual{
+    transform: translate(22vw, -2vw)rotate(-5deg);
+    filter: drop-shadow(-.3vw .2vw #132536)
+    drop-shadow(-.2vw .1vw #132536)
+    drop-shadow(-.1vw 0vw #132536);
+    rotate: 5deg;
+}
+
+#visual:hover{
+    transform: translate(22vw, -2.5vw) rotate(-5deg) scale(1.12 );
+    filter: drop-shadow(-.5vw .4vw #132536)
+    drop-shadow(-.4vw .3vw #132536)
+    drop-shadow(-.3vw .2vw #132536)
+    drop-shadow(-.2vw .1vw #132536);
+    rotate: 3deg;
+}
+
+#account{
+    transform: translate(-25vw, 4vw)rotate(-10deg);
+    filter: drop-shadow(.3vw -.2vw #132536)
+    drop-shadow(.2vw -.1vw #132536)
+    drop-shadow(.1vw 0vw #132536);
+    rotate: 5deg;
+}
+
+#account:hover{
+    transform: translate(-25vw, 3.5vw) rotate(-10deg) scale(1.12);
+    filter: drop-shadow(.5vw -.4vw #132536)
+    drop-shadow(.4vw -.3vw #132536)
+    drop-shadow(.3vw -.2vw #132536)
+    drop-shadow(.2vw -.1vw #132536);
+    rotate: -3deg;
+}
+
+
+#sound{
+    transform: translate(20vw, -7vw)rotate(10deg);
+    filter: drop-shadow(-.3vw -.2vw #132536)
+    drop-shadow(-.2vw -.1vw #132536)
+    drop-shadow(-.1vw 0vw #132536);
+    rotate: 5deg;
+}
+
+#sound:hover{
+    transform: translate(20vw, -7.5vw) rotate(10deg) scale(1.12);
+    filter: drop-shadow(-.5vw -.4vw #132536)
+    drop-shadow(-.4vw -.3vw #132536)
+    drop-shadow(-.3vw -.2vw #132536)
+    drop-shadow(-.2vw -.1vw #132536);
+    rotate: 3deg;
+}
