@@ -30,11 +30,11 @@ if (header) {
             }
             if (child.id == "home"){
                 await delay(500)
-                window.location.href="/index.html"
+                window.location.href="../index.html"
             }
             if (child.id == "options"){
                 await delay(500)
-                window.location.href="/html/options.html"
+                window.location.href="../html/options.html"
             }
         }
     })
@@ -47,6 +47,6 @@ if (returnBtn) {
             await loader1("outro")
         }
         await delay(500)
-        window.location.href="/index.html"
+        window.location.href="../index.html"
     }
 }
